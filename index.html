@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Trip Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://unpkg.com/three/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three/examples/jsm/"
+        }
+    }
+    </script>
+    <script src="script/script.js" defer type="module"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="logo">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gameplay">Gameplay</a></li>
+            <li><a href="#donate" class="btn">Donate</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img class="hero" src="https://source.unsplash.com/1600x900/?nature,water" alt="hero">
+        <div class="texts">
+            <h1>A TRIP HOME</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, provident!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <div class="btns">
+                <a href="#donate" class="btn">Donate</a>
+                <a href="#about" class="btn">About</a>
+            </div>
+        </div>
+        <div class="diviser diviser1"></div>
+    </header>
+    <section class="video" id="home">
+        <div class="video-text">
+            <h2>Video Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <video src="videos/promo.mp4" controls></video>
+    </section>
+    <div class="diviser diviser2"></div>
+    <section class="elements" id="about">
+        <h2>Elements</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div id="three">
+
+        </div>
+    </section>
+    <div class="diviser diviser3"></div>
+    <section class="gameplay" id="gameplay">
+        <h2>Gameplay</h2>
+        <video src="videos/gameplay.mp4" controls></video>
+    </section>
+    <section class="predonate" id="donate">
+        <h1>Donate</h1>
+    </section>
+    <section class="donate">
+        <div class="goals">
+            <div class="card">
+                <h3>TIER 1</h3>
+                <h2>10€</h2>
+                <img src="images/ranks/bronze.png" alt="bronze" height="100px">
+            </div>
+            <div class="card">
+                <h3>TIER 2</h3>
+                <h2>20€</h2>
+                <img src="images/ranks/silver.png" alt="silver" height="100px">
+            </div>
+            <div class="card">
+                <h3>TIER 3</h3>
+                <h2>30€</h2>
+                <img src="images/ranks/gold.png" alt="gold" height="100px">
+            </div>
+            <div class="card">
+                <h3>TIER 4</h3>
+                <h2>40€</h2>
+                <div class="img">
+                    <img src="images/ranks/light.png" alt="light" height="200px" class="light">
+                    <img src="images/ranks/diamond.png" alt="diamond" height="100px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="images/logo.png" alt="logo">
+        <p>© 2021 A TRIP HOME. All rights reserved.</p>
+    </footer>
+</body>
+</html>

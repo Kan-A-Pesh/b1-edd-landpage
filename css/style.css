@@ -1,0 +1,334 @@
+:root {
+    --primary-color: #2b50aa;
+    --secondary-color: #EFCB68;
+    --tertiary-color: #00a6fb;
+    --black-color: #010d13;
+    --white-color: #f1f2f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav img {
+    height: 75px;
+    width: 75px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header .texts {
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+header .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+    filter: sepia(1) hue-rotate(165deg) brightness(.8);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.diviser {
+    aspect-ratio: 6 / 1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 101% 101%;
+    background-position: center;
+}
+
+.diviser.diviser1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../svg/diviser1.svg);
+}
+
+.diviser.diviser2 {
+    background-image: url(../svg/diviser2.svg);
+}
+
+.diviser.diviser3 {
+    background-image: url(../svg/diviser3.svg);
+}
+
+section.video {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 50px 10vw;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+section.video .video-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.video video {
+    width: 50vw;
+    border-radius: 8px;
+}
+
+section.elements {
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+}
+
+section.elements h2 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 16px;
+}
+
+section.elements p {
+    padding: 0 15vw;
+}
+
+section.elements #three {
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+}
+
+section.gameplay {
+    background-color: var(--white-color);
+    padding: 50px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: var(--black-color);
+}
+
+section.gameplay video {
+    width: 50vw;
+    border-radius: 8px;
+}
+
+section.predonate {
+    padding: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+}
+
+section.donate {
+    background-image: url(../svg/screen.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10vw;
+}
+
+.goals {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.goals .card {
+    background: rgba(128, 128, 128, 0.15);
+    backdrop-filter: blur(15px);
+
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.goals .card .img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goals .card .img img {
+    z-index: 2;
+}
+
+.goals .card .light {
+    position: absolute;
+    z-index: 1;
+    animation: light 5s infinite linear;
+}
+
+@keyframes light {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer * {
+    opacity: .5;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    header .texts {
+        padding: 0 5vw;
+    }
+
+    section.video {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    section.video video {
+        width: 80vw;
+    }
+
+    section.gameplay video {
+        width: 80vw;
+    }
+
+    section.donate {
+        padding: 50px 5vw;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .goals {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px 5vw;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav li a:not(.btn) {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
